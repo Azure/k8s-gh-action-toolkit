@@ -1,0 +1,76 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #4A5568;
+  max-width: 600px;
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+/* Primary button for "View Documentation" */
+.primaryButton {
+  background: #326CE5;
+  color: #ffffff;
+}
+
+/* FIX: Improve hover color so text remains readable */
+.primaryButton:hover {
+  background: #4A7EF4; /* Lighter blue instead of dark blue */
+  color: #ffffff; /* Ensures text remains white and readable */
+  transform: translateY(-2px);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+  max-width: 900px;
+}
+
+/* Card Styling */
+.card {
+  background: #f8f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #1E293B;
+  font-weight: bold;
+  transition: transform 0.15s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+

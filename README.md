@@ -1,14 +1,10 @@
-# Project
+# Kubernetes GitHub Action Toolkit 🚀
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+[![GitHub Pages](https://img.shields.io/badge/Documentation-Live-blue?style=for-the-badge)](https://azure.github.io/k8s-gh-action-toolkit/)
 
-As the maintainer of this project, please make a few updates:
+📖 **Visit the full documentation:**  
+➡️ **[https://azure.github.io/k8s-gh-action-toolkit/](https://azure.github.io/k8s-gh-action-toolkit/)** for **detailed guides, setup instructions, and usage examples**.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
 
 ## Contributing
 

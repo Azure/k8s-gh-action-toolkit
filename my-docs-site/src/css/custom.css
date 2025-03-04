@@ -1,0 +1,80 @@
+/**
+ * Custom styling for Kubernetes GitHub Actions Toolkit docs.
+ * This removes green accents and keeps a clean, white-top layout.
+ */
+
+ :root {
+  --ifm-color-primary: #326CE5; /* Kubernetes blue */
+  --ifm-color-primary-dark: #2B5BC4;
+  --ifm-color-primary-darker: #264EA7;
+  --ifm-color-primary-darkest: #1E3D85;
+  --ifm-color-primary-light: #3B7AFF;
+  --ifm-color-primary-lighter: #4A8AFF;
+  --ifm-color-primary-lightest: #5A9BFF;
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(50, 108, 229, 0.05);
+
+  /* Keep the top (navbar) white */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-link-color: #1E293B; /* Dark text */
+  --ifm-navbar-link-hover-color: #326CE5; /* Blue hover effect */
+
+  /* Sidebar Customization */
+  --ifm-sidebar-background: #F8FAFC; /* Light gray sidebar */
+  --ifm-heading-color: #1E293B; /* Dark gray/black headings */
+  --ifm-font-color-base: #374151; /* Slightly darker gray text */
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] {
+  --ifm-color-primary: #326CE5;
+  --ifm-color-primary-dark: #2B5BC4;
+  --ifm-color-primary-darker: #264EA7;
+  --ifm-color-primary-darkest: #1E3D85;
+  --ifm-color-primary-light: #3B7AFF;
+  --ifm-color-primary-lighter: #4A8AFF;
+  --ifm-color-primary-lightest: #5A9BFF;
+
+  --ifm-navbar-background-color: #1E1E1E; /* Dark navbar */
+  --ifm-navbar-link-color: #F8FAFC; /* Light navbar links */
+  --ifm-navbar-link-hover-color: #5A9BFF; /* Soft blue hover */
+
+  --ifm-sidebar-background: #111827; /* Dark sidebar */
+  --ifm-heading-color: #E5E7EB; /* Light gray headers */
+  --ifm-font-color-base: #D1D5DB; /* Lighter gray text */
+
+  --docusaurus-highlighted-code-line-bg: rgba(50, 108, 229, 0.2);
+}
+
+/* Improve sidebar styling */
+.menu {
+  font-size: 16px;
+}
+
+.menu__link {
+  color: var(--ifm-font-color-base);
+}
+
+.menu__link--active,
+.menu__link:hover {
+  color: var(--ifm-color-primary);
+  font-weight: bold;
+}
+
+/* Code block styling */
+code {
+  font-size: 14px;
+  background: rgba(50, 108, 229, 0.05);
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+[data-theme='dark'] code {
+  background: rgba(50, 108, 229, 0.15);
+}
+
+/* Keep the navbar clean */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
