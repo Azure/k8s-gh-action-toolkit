@@ -12,10 +12,10 @@ jobs:
     name: Test deployment
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a
         with:
           node-version: 18
           cache: npm
@@ -23,4 +23,4 @@ jobs:
       - name: Install dependencies
         run: npm install --frozen-lockfile
       - name: Test build website
-        run: npm build
+        run: npm run build
